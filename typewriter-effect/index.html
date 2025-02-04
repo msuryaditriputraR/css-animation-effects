@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typewriter Effect</title>
+
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+
+      .container {
+        width: fit-content;
+      }
+
+      p {
+        font-family: monospace;
+        font-size: 2rem;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 1px solid;
+        animation: typing 3s steps(22) infinite alternate,
+          blink 1s step-end infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div class="container">
+          <p>CSS Typewriter Animation</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
